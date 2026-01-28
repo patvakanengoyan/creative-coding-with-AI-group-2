@@ -1,11 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexcent Hero</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+  <link rel="stylesheet" href="./css/style.css"/>
 </head>
+
 <body>
-    
+  <header class="navbar">
+    <div class="container nav">
+      <a href="#"> <img src="./images/Logo (1).png" alt="Logo"></a>
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Feature</a></li>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Testimonial</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+      <div class="auth">
+        <a href="#" class="login">Login</a>
+        <a href="#" class="signup">Sign up</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container carousel">
+      <div class="slide active">
+        <div class="hero-grid">
+          <div class="hero-text">
+            <h1>
+              Lessons and insights 1<br>
+              <span>from 8 years</span>
+            </h1>
+            <p>
+              Where to grow your business as a photographer: site or social media?
+            </p>
+            <a href="#"><button>Register</button></a>
+          </div>
+          <div class="hero-image">
+            <div class="carousel-inner">
+              <img src="./images/photo.2026-01-19 205905.png">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="hero-grid">
+          <div class="hero-text">
+            <h2>
+              Lessons and insights 2<br>
+              <span>from 8 years</span>
+            </h2>
+            <p>
+              Where to grow your business as a photographer: site or social media?
+            </p>
+            <a href="#"><button>Register</button></a>
+          </div>
+          <div class="hero-image">
+            <div class="carousel-inner">
+              <img src="https://images.unsplash.com/photo-1529699211952-734e80c4d42b?w=500">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="hero-grid">
+          <div class="hero-text">
+            <h2>
+              Lessons and insights 3<br>
+              <span>from 8 years</span>
+            </h2>
+            <p>
+              Where to grow your business as a photographer: site or social media?
+            </p>
+            <a href="#"><button>Register</button></a>
+          </div>
+          <div class="hero-image">
+            <div class="carousel-inner">
+              <img src="https://images.unsplash.com/photo-1586165368502-1bad197a6461?w=500">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dots-container">
+        <span class="dot active" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+
+      <!-- Logo & copyright -->
+      <div class="footer-box">
+        <div class="logo">
+         <img src="images/Icon.png" alt="Icon">
+          <span class="logo-text">Nexcent</span>
+        </div>
+        <p>Copyright © 2020 Nexcent ltd.</p>
+        <p>All rights reserved</p>
+
+        <div class="social">
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-dribbble"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
+      </div>
+
+      <!-- Company -->
+      <div class="footer-box">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Testimonials</a></li>
+        </ul>
+      </div>
+
+      <!-- Support -->
+      <div class="footer-box">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Help center</a></li>
+          <li><a href="#">Terms of service</a></li>
+          <li><a href="#">Legal</a></li>
+          <li><a href="#">Privacy policy</a></li>
+          <li><a href="#">Status</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="footer-box">
+        <h4>Stay up to date</h4>
+        <div class="newsletter">
+          <input type="email" placeholder="Your email address" />
+          <button><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
 </body>
+</html>
+
+  <script>
+    let slideIndex = 0;
+    let timer;
+    const slides = document.querySelectorAll(".slide");
+    const dots = document.querySelectorAll(".dot");
+
+    function showSlides(n) {
+      if (n !== undefined) slideIndex = n;
+
+      slides.forEach(s => s.classList.remove("active"));
+      dots.forEach(d => d.classList.remove("active"));
+
+      if (n === undefined) slideIndex++;
+      if (slideIndex > slides.length) slideIndex = 1;
+      if (slideIndex < 1) slideIndex = slides.length;
+
+      slides[slideIndex - 1].classList.add("active");
+      dots[slideIndex - 1].classList.add("active");
+
+      clearTimeout(timer);
+      timer = setTimeout(() => showSlides(), 4000);
+    }
+
+    function currentSlide(n) {
+      showSlides(n + 1);
+    }
+
+    showSlides();
+  </script>
+</body>
+
 </html>
