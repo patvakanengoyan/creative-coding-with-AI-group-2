@@ -1,11 +1,372 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexcent Hero</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+  <link rel="stylesheet" href="./css/style.css"/>
+  <link rel="stylesheet" href="./css/globals.css"/>
 </head>
+
 <body>
-    
+  <header class="navbar">
+    <div class="container nav">
+      <a href="#"> <img src="./images/Logo (1).png" alt="Logo"></a>
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Feature</a></li>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Testimonial</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+      <div class="auth">
+        <a href="#" class="login">Login</a>
+        <a href="#" class="signup">Sign up</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container carousel">
+      <div class="slide active">
+        <div class="hero-grid">
+          <div class="hero-text">
+            <h1>
+              Lessons and insights 1<br>
+              <span>from 8 years</span>
+            </h1>
+            <p>
+              Where to grow your business as a photographer: site or social media?
+            </p>
+            <a href="#"><button>Register</button></a>
+          </div>
+          <div class="hero-image">
+            <div class="carousel-inner">
+              <img src="./images/photo.2026-01-19 205905.png">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="hero-grid">
+          <div class="hero-text">
+            <h2>
+              Lessons and insights 2<br>
+              <span>from 8 years</span>
+            </h2>
+            <p>
+              Where to grow your business as a photographer: site or social media?
+            </p>
+            <a href="#"><button>Register</button></a>
+          </div>
+          <div class="hero-image">
+            <div class="carousel-inner">
+              <img src="https://images.unsplash.com/photo-1529699211952-734e80c4d42b?w=500">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="hero-grid">
+          <div class="hero-text">
+            <h2>
+              Lessons and insights 3<br>
+              <span>from 8 years</span>
+            </h2>
+            <p>
+              Where to grow your business as a photographer: site or social media?
+            </p>
+            <a href="#"><button>Register</button></a>
+          </div>
+          <div class="hero-image">
+            <div class="carousel-inner">
+              <img src="https://images.unsplash.com/photo-1586165368502-1bad197a6461?w=500">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dots-container">
+        <span class="dot active" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+      </div>
+
+    </div>
+  </section>
+  
+  <section>
+	<div class="clients">
+      <div class="div">
+        <div class="section-title">Our Clients</div>
+        <p class="description">We have been working with some Fortune 500+ clients</p>
+      </div>
+      <img class="clients-logos" src="./images/Clients Logos.png" />
+    </div>
+  </section>
+  
+  <section>
+	 <div class="body">
+      <div class="unlock-wrapper">
+        <div class="unlock">
+          <img class="frame" src="img/frame-35.svg" />
+          <div class="div">
+            <div class="frame-2">
+              <p class="text-wrapper">The unseen of spending three years at Pixelgrade</p>
+              <p class="p">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam
+                vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique
+                iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae,
+                tempus sem. Donec elementum pulvinar odio.
+              </p>
+            </div>
+            <button class="button"><div class="label">Learn More</div></button>
+          </div>
+        </div>
+      </div>
+      <div class="achievements">
+        <div class="section-heading">
+          <div class="section-title-wrapper">
+            <p class="section-title">
+              <span class="span">Helping a local </span> <span class="text-wrapper-2">business reinvent itself</span>
+            </p>
+          </div>
+          <p class="description">We reached here with our hard work and dedication</p>
+        </div>
+        <div class="counts">
+          <div class="row">
+            <div class="element">
+              <div class="icon"><img class="vector" src="./images/icon4.png" /></div>
+              <div class="details">
+                <div class="number">2,245,341</div>
+                <div class="label-2">Members</div>
+              </div>
+            </div>
+            <div class="element">
+              <div class="icon">
+                <div class="group">
+                  <img class="img" src="./images/icon1.png" />
+                </div>
+              </div>
+              <div class="details">
+                <div class="number">46,328</div>
+                <div class="label-2">Clubs</div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="element">
+              <div class="icon"><img class="vector-4" src="./images/icon2.png" /></div>
+              <div class="details">
+                <div class="number">828,867</div>
+                <div class="label-2">Event Bookings</div>
+              </div>
+            </div>
+            <div class="element">
+              <div class="icon"><img class="vector-5" src="./images/icon3.png" /></div>
+              <div class="details">
+                <div class="number">1,926,436</div>
+                <div class="label-2">Payments</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="unlock-wrapper">
+        <div class="unlock">
+          <div class="mobile-login-pana">
+            <img class="background-complete" src="./images/pana.png" />
+            <div class="floor"></div>
+                    <div class="speech-bubble">
+              <!-- <img class="vector-47" src="img/vector-31.svg" /> -->
+			  <!-- <img class="vector-48" src="img/vector-12.svg" /> -->
+            </div>
+            <!-- <img class="character" src="img/character.png" /> -->
+          </div>
+          <div class="div">
+            <div class="frame-2">
+              <p class="text-wrapper">How to design your site footer like we did</p>
+              <p class="p">
+                Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt molestie, massa
+                nunc varius arcu, at scelerisque elit erat a magna. Donec quis erat at libero ultrices mollis. In hac
+                habitasse platea dictumst. Vivamus vehicula leo dui, at porta nisi facilisis finibus. In euismod augue
+                vitae nisi ultricies, non aliquet urna tincidunt. Integer in nisi eget nulla commodo faucibus efficitur
+                quis massa. Praesent felis est, finibus et nisi ac, hendrerit venenatis libero. Donec consectetur
+                faucibus ipsum id gravida.
+              </p>
+            </div>
+            <button class="button"><div class="label">Learn More</div></button>
+          </div>
+        </div>
+      </div>
+      <div class="customer-s">
+        <img class="image" src="img/image-9.png" />
+        <div class="frame-3">
+          <div class="content">
+            <p class="we-have-enjoyed">
+              Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum risus tincidunt
+              ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam in, gravida enim. Nullam ut
+              molestie arcu, at hendrerit elit. Morbi laoreet elit at ligula molestie, nec molestie mi blandit.
+              Suspendisse cursus tellus sed augue ultrices, quis tristique nulla sodales. Suspendisse eget lorem eu
+              turpis vestibulum pretium. Suspendisse potenti. Quisque malesuada enim sapien, vitae placerat ante feugiat
+              eget. Quisque vulputate odio neque, eget efficitur libero condimentum id. Curabitur id nibh id sem
+              dignissim finibus ac sit amet magna.
+            </p>
+            <div class="frame-4">
+              <div class="text-wrapper-4">Tim Smith</div>
+              <p class="text-wrapper-5">British Dragon Boat Racing Association</p>
+            </div>
+          </div>
+          <div class="frame-5">
+            <img class="frame-6" src="img/frame-10.svg" />
+            <div class="frame-7">
+              <div class="text-wrapper-6">Meet all customers</div>
+              <img class="element-arrows-directions" src="img/right-2.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="community-updates">
+        <div class="community">
+          <p class="section-title-2">Caring is the new marketing</p>
+          <p class="description-2">
+            The Nexcent blog is the best place to read about the latest membership insights, trends and more. See
+            who&#39;s joining the community, read about how our community are increasing their membership income and
+            lot&#39;s more.​
+          </p>
+        </div>
+        <div class="frame-8">
+          <div class="element-2">
+            <img class="image-2" src="./images/image 18.png" />
+            <div class="content-2">
+              <p class="text-wrapper-7">Creating Streamlined Safeguarding Processes with OneRen</p>
+              <div class="frame-9">
+                <div class="text-wrapper-8">Readmore</div>
+                <img class="element-arrows-directions-2" src="img/right.svg" />
+              </div>
+            </div>
+          </div>
+          <div class="element-2">
+            <img class="image-3" src="./images/image 19.png" />
+            <div class="content-2">
+              <p class="text-wrapper-7">What are your safeguarding responsibilities and how can you manage them?</p>
+              <div class="frame-9">
+                <div class="text-wrapper-8">Readmore</div>
+                <img class="element-arrows-directions-2" src="img/right-2.svg" />
+              </div>
+            </div>
+          </div>
+          <div class="element-2">
+            <img class="image-2" src="./images/image 20.png" />
+            <div class="content-2">
+              <p class="text-wrapper-7">Revamping the Membership Model with Triathlon Australia</p>
+              <div class="frame-9">
+                <div class="text-wrapper-8">Readmore</div>
+                <img class="element-arrows-directions-2" src="img/right-2.svg" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+
+      <!-- Logo & copyright -->
+      <div class="footer-box">
+        <div class="logo">
+         <img src="images/Icon.png" alt="Icon">
+          <span class="logo-text">Nexcent</span>
+        </div>
+        <p>Copyright © 2020 Nexcent ltd.</p>
+        <p>All rights reserved</p>
+
+        <div class="social">
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-dribbble"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
+      </div>
+
+      <!-- Company -->
+      <div class="footer-box">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Testimonials</a></li>
+        </ul>
+      </div>
+
+      <!-- Support -->
+      <div class="footer-box">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Help center</a></li>
+          <li><a href="#">Terms of service</a></li>
+          <li><a href="#">Legal</a></li>
+          <li><a href="#">Privacy policy</a></li>
+          <li><a href="#">Status</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="footer-box">
+        <h4>Stay up to date</h4>
+        <div class="newsletter">
+          <input type="email" placeholder="Your email address" />
+          <button><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
 </body>
+</html>
+
+  <script>
+    let slideIndex = 0;
+    let timer;
+    const slides = document.querySelectorAll(".slide");
+    const dots = document.querySelectorAll(".dot");
+
+    function showSlides(n) {
+      if (n !== undefined) slideIndex = n;
+
+      slides.forEach(s => s.classList.remove("active"));
+      dots.forEach(d => d.classList.remove("active"));
+
+      if (n === undefined) slideIndex++;
+      if (slideIndex > slides.length) slideIndex = 1;
+      if (slideIndex < 1) slideIndex = slides.length;
+
+      slides[slideIndex - 1].classList.add("active");
+      dots[slideIndex - 1].classList.add("active");
+
+      clearTimeout(timer);
+      timer = setTimeout(() => showSlides(), 4000);
+    }
+
+    function currentSlide(n) {
+      showSlides(n + 1);
+    }
+
+    showSlides();
+  </script>
+</body>
+
 </html>
